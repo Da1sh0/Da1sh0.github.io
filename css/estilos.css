@@ -29,16 +29,20 @@ header {
     z-index: 1000;
 }
 
-.menu {
+.container {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 80px;
     margin-bottom: 80px;
+}
+
+.menu {
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .opciones {
@@ -48,6 +52,7 @@ header {
     background: #fff;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    width: 200px;
 }
 
 .opciones:hover {
@@ -86,4 +91,38 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .opciones {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    header {
+        font-size: 24px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .opciones img {
+        width: 80px;
+        height: 80px;
+    }
+    .opciones p {
+        font-size: 14px;
+    }
+    header {
+        padding: 15px;
+    }
+    footer {
+        padding: 15px;
+    }
 }
