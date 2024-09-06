@@ -47,15 +47,16 @@ header {
     flex-wrap: wrap;
 }
 
-.info {
+.info_general, .info {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
+    
     margin-bottom: 100px;
 }
 
-.more{
+.boton{
     background-color: #2C3E50;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     text-decoration: none;
@@ -65,7 +66,7 @@ header {
     transition: transform 0.3s;
 }
 
-.more:hover {
+.boton:hover {
     transform: translateY(-5px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
@@ -147,10 +148,15 @@ footer a:hover {
 
 
 @media (max-width: 768px) {
-    .menu,.info {
+    .menu,.info_general{
         flex-direction: column;
         align-items: center;
         margin-top: 20px;
+        margin-bottom: 100px;
+    }
+    .info{
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 100px;
     }
     .opciones {
