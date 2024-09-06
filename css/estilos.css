@@ -97,6 +97,33 @@ header {
     color: #2C3E50;
 }
 
+.more-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.sample {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.sample:hover {
+    transform: translateY(-10px);
+}
+
+.sample img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
